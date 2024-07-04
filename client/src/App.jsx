@@ -7,6 +7,8 @@ import Dashboard from './pages/Dashboard'
 import MyPosts from './pages/MyPosts'
 import Signin from './pages/Signin'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import FooterComp from './components/Footer'
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
 
 
 </Routes>
+<FooterComp></FooterComp>
 
     </BrowserRouter>
   )
