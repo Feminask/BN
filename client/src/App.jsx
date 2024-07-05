@@ -9,6 +9,7 @@ import Signin from './pages/Signin'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import FooterComp from './components/Footer'
+import PrivateRoute from './pages/PostPage'
 
 function App() {
   return (
@@ -23,8 +24,12 @@ function App() {
       <Route path='/sign-in' element={<Signin></Signin>}></Route>
       <Route path='/sign-up' element={<SignUp></SignUp>}></Route>
 
-      <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
+<Route element={<PrivateRoute></PrivateRoute>}>
+<Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
          <Route path='/my-posts' element={<MyPosts></MyPosts>}></Route>
+
+</Route>
+
 
 
 
